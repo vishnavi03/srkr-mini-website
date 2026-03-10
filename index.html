@@ -1,131 +1,164 @@
+<!DOCTYPE html>
 <html lang="en">
-       <head> <title> srkr </title> </head>
-
+<head>
+<meta charset="UTF-8">
+<title>SRKR Engineering College</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background-color:#f4f4f4;
+}
+header{
+background-color:#4B0082;
+color:white;
+padding:15px;
+text-align:center;
+}
+nav{
+margin-top:10px;
+}
+nav a{
+text-decoration:none;
+}
+button{
+padding:8px 15px;
+margin:5px;
+border:none;
+background-color:#6a5acd;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+button:hover{
+background-color:#483d8b;
+}
+main{
+padding:20px;
+}
+section{
+background:white;
+padding:15px;
+margin-bottom:20px;
+border-radius:8px;
+box-shadow:0px 0px 5px gray;
+}
+img{
+border-radius:10px;
+}
+form input{
+padding:8px;
+width:200px;
+}
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:15px;
+}
+</style>
+<script>
+function validateLogin(){
+let email=document.getElementById("email").value;
+let password=document.getElementById("password").value;
+if(email=="" || password==""){
+alert("Please fill all fields");
+return false;
+}
+alert("Login Successful");
+return true;
+}
+</script>
+</head>
 <body>
-
-      <header>
-<h2>SRKR</h2>
-<a href='' target='_blank' title='home'>
-    <button> home </button>
-</a>
-<a href='' target='_blank' title='about'>
-    <button> about </button>
-</a>
-<a href='' target='_blank' title='academics'>
-    <button> academics </button>
-</a>
-<a href='' target='_blank' title='admissions'>
-    <button> admissions </button>
-</a>
-<a href='' target='_blank' title='research'>
-    <button> research </button>
-</a>
-       </header>
-
-      <main>
-<h1 align='center' style='color : purple;'>SAGI RAMA KRISHNAM RAJU ENGINEERING COLLEGE </h1>
-<div align="center">
-<img src="" alt="image" width='200' length='200'>
-
+<header>
+<h2>SRKR Engineering College</h2>
+<nav>
+<a href="#about"><button>About</button></a>
+<a href="#programs"><button>Programs</button></a>
+<a href="#placements"><button>Placements</button></a>
+<a href="#login"><button>Login</button></a>
+</nav>
+</header>
+<main>
+<h1 style="text-align:center;color:purple;">
+Sagi Rama Krishnam Raju Engineering College
+</h1>
+<div style="text-align:center;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Engineering_college.jpg" width="250" height="200">
 </div>
-<section id='about'>
-<h3>about:</h3>
-
-<p>Sagi Rama Krishnam Raju Engineering College (SRKREC), established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants. Being one of the premier and well-established technical institutions of the country, it continues to render service to the nation and the world at large with its alumni holding highly prestigious positions and making substantial contribution.</p>
+<section id="about">
+<h3>About</h3>
+<p>
+Sagi Rama Krishnam Raju Engineering College (SRKREC), established in 1980, 
+is a self-financed academic institution providing quality technical education. 
+The college is known for its strong academic programs, placements, and research activities.
+</p>
 </section>
-
-<br>
-<br>
-
-<section id='b.tech programs'>
-<h3>B.TECH Programs</h3>
-
-<a href='' target='_blank' title='CSE'>
-    <button> CSE </button>
-</a>
-<a href='' target='_blank' title='AIML'>
-    <button> AIML </button>
-</a>
-<a href='' target='_blank' title='AIDS'>
-    <button> AIDS </button>
-</a>
-<a href='' target='_blank' title='AIDS'>
-    <button> AIDS </button>
-</a>
-<a href='' target='_blank' title='CIC'>
-    <button> CIC </button>
-</a>
-
-<br>
-
-<a href='' target='_blank' title='IT'>
-    <button> IT </button>
-</a>
-<a href='' target='_blank' title='CSIT'>
-    <button> CSIT </button>
-</a>
-<a href='' target='_blank' title='CSBS'>
-    <button> CSBS </button>
-</a>
-<a href='' target='_blank' title='EEE'>
-    <button> EEE </button>
-</a>
-<a href='' target='_blank' title='ECE'>
-    <button> ECE </button>
-</a>
+<section id="programs">
+<h3>B.Tech Programs</h3>
+<button>CSE</button>
+<button>AIML</button>
+<button>AIDS</button>
+<button>CIC</button>
+<button>IT</button>
+<button>CSIT</button>
+<button>CSBS</button>
+<button>EEE</button>
+<button>ECE</button>
 </section>
-
-<iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/MtxNExYkigU">
+<section>
+<h3>College Introduction Video</h3>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/MtxNExYkigU">
 </iframe>
-<section id='placements'>
-<h3>placements</h3>
+</section>
+<section id="placements">
+<h3>Placements</h3>
 <ol>
-<li>Campus Recruitment Training (CRT):<br>
-<p>The CRT chiefly focuses on two components: 1. Soft skills 2. Technical skills<br>
-<ol>
-<li>Soft skills training</li>
-<li>technical training </li>
-<li>career guidance </li>
-</ol>
-</p>
+<li>
+Campus Recruitment Training (CRT)
+<ul>
+<li>Soft Skills Training</li>
+<li>Technical Training</li>
+<li>Career Guidance</li>
+</ul>
 </li>
-<li>Internships:<br>
-<p>Internships are short-term opportunities to gain entry-level work experience. Interns usually work alongside a specific team within a company, learning from seasoned professionals and trying out different aspects of the job. Rather than leading their own projects, interns usually complete smaller tasks to support larger organizational initiatives.</p>
+<li>
+Internships
+<p>
+Internships provide students with industry exposure and allow them to work 
+with professionals on real-world projects.
+</p>
 </li>
 </ol>
 </section>
-
-<section id='login'>
-<h3>student login</h3>
-<label for='email'>Email :</label>
-<input type='email'>
+<section id="login">
+<h3>Student Login</h3>
+<form onsubmit="return validateLogin()">
+<label>Email:</label>
 <br>
+<input type="email" id="email">
+<br><br>
+<label>Password:</label>
 <br>
-<label for='password'>Password  :</label>
-<input type='password'>
+<input type="password" id="password">
+<br><br>
+<button type="submit">Login</button>
+</form>
 </section>
-
-<br>
-<br>
-
-
-      </main>
-
-      <footer>
-<p>contact us:<p>
-<ol>
-<li>SRKR Marg, China Amiram,Bhimavaram, A.P, India - 534204</li>
-<li>Telephone: +91 (8816) 223332</li>
-<li>Mobile: +91 9848823332</li>
-<li>Email: principal@srkrec.ac.in</li>
-<ol>
-<p>Sagi Rama Krishnam Raju (SRKR) Engineering College
-(Autonomous)
+</main>
+<footer>
+<h4>Contact Us</h4>
+<p>
+SRKR Marg, China Amiram, Bhimavaram, Andhra Pradesh, India - 534204
 </p>
-
-
-      </footer>
-
+<p>
+Telephone: +91 (8816) 223332
+</p>
+<p>
+Email: principal@srkrec.ac.in
+</p>
+</footer>
 </body>
 </html>
